@@ -79,7 +79,6 @@ Pressure Rankings: Bar charts showing the maximum pressures for the last 5, 10, 
 
 ## Testing
 To run the tests, use the following command:
-   ```bash
    pytest
 
 ## Results
@@ -92,7 +91,7 @@ The results of the analyses and visualizations can be found in the generated plo
 - pyarrow>=16.1.0
 - matplotlib==3.9.0
 - requests==2.32.2
-- pytest
+- pytest==8.2.1
 
 ## Author
 Murilo Krauss - [Your GitHub Profile](https://github.com/murilokrauss32)
