@@ -43,3 +43,21 @@ weather_analysis/
    ```bash
    git clone https://github.com/yourusername/weather_analysis.git
    cd weather_analysis
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Install the package:
+   ```bash
+   pip install .
+
+## Usage
+1. Run the main script to fetch data, perform analyses, and generate visualizations:
+   ```bash
+   python main.py
