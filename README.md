@@ -92,6 +92,8 @@ The results of the analyses and visualizations can be found in the generated plo
 - matplotlib==3.9.0
 - requests==2.32.2
 - pytest==8.2.1
+- distributed==2024.5.1
+- bokeh==3.4.1
 
 ## Author
 Murilo Krauss - [Your GitHub Profile](https://github.com/murilokrauss32)
