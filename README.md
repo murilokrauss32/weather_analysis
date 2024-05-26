@@ -61,3 +61,38 @@ weather_analysis/
 1. Run the main script to fetch data, perform analyses, and generate visualizations:
    ```bash
    python main.py
+
+## Analyses Performed
+Average Atmospheric Pressure:
+Calculates the average pressure for the last 15 days for each specified location.
+
+Relationship Analysis:
+Analyzes the correlation between humidity, temperature, and pressure for each location.
+
+Maximum Pressure Ranking:
+Ranks the maximum atmospheric pressures over the last 5, 10, and 15 days across all locations.
+
+## Visualization
+Average Pressure: Bar charts showing the average atmospheric pressure over the last 15 days for each location.
+Correlation Matrix: Heatmaps showing the correlation between humidity, temperature, and pressure for each location.
+Pressure Rankings: Bar charts showing the maximum pressures for the last 5, 10, and 15 days for each location.
+
+## Testing
+To run the tests, use the following command:
+   ```bash
+   pytest
+
+## Results
+
+The results of the analyses and visualizations can be found in the generated plots after running the main.py script. These include average pressure bar charts, correlation matrices, and pressure ranking bar charts.
+
+## Dependencies
+- pandas==2.0.2
+- dask[dataframe]==2024.5.1
+- pyarrow>=16.1.0
+- matplotlib==3.9.0
+- requests==2.32.2
+- pytest
+
+## Author
+Murilo Krauss - [Your GitHub Profile](https://github.com/murilokrauss32)
