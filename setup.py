@@ -7,9 +7,11 @@ setup(
     install_requires=[
         'requests',
         'pandas',
-        'dask',
+        'dask[dataframe]',
         'matplotlib',
-        'pytest'
+        'pytest',
+        'distributed',
+        'bokeh'
     ],
     entry_points={
         'console_scripts': [
