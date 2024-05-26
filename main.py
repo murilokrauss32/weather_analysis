@@ -1,6 +1,7 @@
 import multiprocessing
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 import dask.dataframe as dd
+from dask.distributed import Client
 from src.data_fetcher import fetch_data
 from src.analysis import calculate_average_pressure, analyze_relationship, max_pressure_ranking
 from src.visualization import plot_average_pressure, plot_relationships, plot_rankings
@@ -51,6 +52,9 @@ def calculate_all_rankings(dask_data_frames):
 
 def main():
     try:
+        client = Client()
+        print(f"Dask dashboard available at: {client.dashboard_link}")
+
         data_frames = fetch_all_data(CHANNELS)
 
         for city, df in data_frames.items():
@@ -58,6 +62,7 @@ def main():
                 logging.warning(f"No data available for {city}")
 
         dask_data_frames = {city: dd.from_pandas(df, npartitions=4) for city, df in data_frames.items()}
+
         average_pressures = calculate_all_average_pressures(dask_data_frames)
         logging.info(f"Average pressures over the last 15 days: {average_pressures}")
 
