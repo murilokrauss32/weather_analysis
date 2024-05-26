@@ -63,19 +63,19 @@ weather_analysis/
    python main.py
 
 ## Analyses Performed
-Average Atmospheric Pressure:
+- Average Atmospheric Pressure:
 Calculates the average pressure for the last 15 days for each specified location.
 
-Relationship Analysis:
+- Relationship Analysis:
 Analyzes the correlation between humidity, temperature, and pressure for each location.
 
-Maximum Pressure Ranking:
+- Maximum Pressure Ranking:
 Ranks the maximum atmospheric pressures over the last 5, 10, and 15 days across all locations.
 
 ## Visualization
-Average Pressure: Bar charts showing the average atmospheric pressure over the last 15 days for each location.
-Correlation Matrix: Heatmaps showing the correlation between humidity, temperature, and pressure for each location.
-Pressure Rankings: Bar charts showing the maximum pressures for the last 5, 10, and 15 days for each location.
+- Average Pressure: Bar charts showing the average atmospheric pressure over the last 15 days for each location.
+- Correlation Matrix: Heatmaps showing the correlation between humidity, temperature, and pressure for each location.
+- Pressure Rankings: Bar charts showing the maximum pressures for the last 5, 10, and 15 days for each location.
 
 ## Testing
 To run the tests, use the following command:
